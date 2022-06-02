@@ -21,7 +21,7 @@ module.exports = {
     });
   },
 
-  edit: (req, res) => {
+  show: (req, res) => {
     Article.findOne({
       where: { id: req.params.id },
     }).then((article) => {
